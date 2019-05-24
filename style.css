@@ -1,0 +1,51 @@
+header{
+  margin: auto;
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 50px;
+}
+.bar{
+  width:70%;
+  height:40px;
+  background-color: black;
+  margin: auto;
+}
+.pole{
+  display: flex;
+  width: 10%;
+  z-index: -1;
+  position:absolute;
+  background-color: green;
+  height: 200px;
+  align-self: flex-end;
+}
+
+.holder{
+  display: flex;
+  width: 30%;
+  align-items: center;
+  justify-content: center;
+  height: inherit;
+  position: relative;
+  /* border: solid black 1px; */
+}
+
+.disc{
+  position: fixed;
+  display:block;
+  align-self: flex-end;
+  border-radius: 4px;
+
+}
+
+.game{
+  /* border: solid black 1px; */
+  width: 70%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items:flex-end;
+  height: 300px;
+}

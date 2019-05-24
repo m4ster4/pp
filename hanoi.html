@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>
+    Tower Of Hanoi Solver
+  </title>
+  <link type="text/css" href="style.css" rel="stylesheet" />
+  <script  type="application/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+
+  <script  type="application/javascript" src="hanoi.js">
+  </script>
+</head>
+<body>
+  <header>
+    <div>
+      What's your tower size?
+      <select name="number" id="number">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+      </select>
+    </div>
+    <button id="start">
+      Start iterative</button>
+      <button id="start-rec">
+        Start recursive</button>
+
+  </header>
+  <section class="game">
+    <div id="Source" class="holder">
+      <div class="pole">
+      </div>
+      <div id="d1" class="disc">
+      </div>
+      <div id="d2" class="disc">
+      </div>
+    </div>
+    <div id="Aux" class="holder">
+      <div class="pole">
+      </div>
+    </div>
+    <div id="Target" class="holder">
+      <div class="pole">
+      </div>
+    </div>
+  </section>
+  <div class="bar">
+  </div >
+  <div style="width:800px;height:200px;">
+      <canvas id="line-chart"  style="width:1200px;height:150px"></canvas>
+  </div>
+</body>
+</html>

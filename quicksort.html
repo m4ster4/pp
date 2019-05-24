@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+
+    <script  type="application/javascript" src="quicksort.js"> </script>
+
+</head>
+<body>
+    <div style="text-align: center">
+      <div>
+          <h2>Porównanie quicksort rekurencynie i iteracyjnie</h2>
+        <h3>Ile liczb chcesz wygenerować?</h3>
+        <label for="n" >Dlugość tablicy = </label>
+        <input type="number" name="n" id="n" value="10" class="btn-medium">
+        <input id="clickMe" type="button" value="Generuj i sortuj" onclick="generateSort(document.getElementById('n').value);" />
+      </div>
+      <h4>NIEUPORZĄDKOWANA:</h4>
+
+      <table class="table" id="table">
+        <thead>
+          <tr>
+          </tr>
+        </thead>
+    </table>
+    <h4>POSORTOWANA TABLICA QUICKSORT REKURENCYJNIE:</h4>
+    <table class="table" id="rec_table">
+        <thead>
+          <tr>
+          </tr>
+        </thead>
+    </table>
+    <h4>POSORTOWANA TABLICA QUICKSORT ITERACYJNIE:</h4>
+
+    <table class="table" id="iter_table">
+        <thead>
+          <tr>
+          </tr>
+        </thead>
+    </table>
+</div>
+      <!-- <canvas id="myChart" width="400" height="400"></canvas> -->
+      <div style="width:800px;height:400px;">
+          <canvas id="line-chart"  style="width:1200px;height:400px"></canvas>
+      </div>
+      
+  </body>
+</html>
