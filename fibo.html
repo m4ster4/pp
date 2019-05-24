@@ -5,6 +5,8 @@
     Tower Of Hanoi Solver
   </title>
   <!-- <script  type="application/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
   <script  type="application/javascript" src="fibo.js">
 
@@ -14,10 +16,10 @@
 <body>
   <header>
     <div style="text-align: center">
-      What's your fibo  number?
+      <h2>Wybierz wyraz ciągu Fibonacciego:</h2>
       <label for="n" >n = </label>
       <input type="text" name="n" id="n" value="10" class="btn-medium">
-      <input id="clickMe" type="button" value="clickme" onclick="compareTime(document.getElementById('n').value);" />
+      <input id="clickMe" type="button" class="btn btn-primary btn-sm"  value="Wygeneruj" onclick="compareTime(document.getElementById('n').value);" />
     </div>
     <div style="width:1200px;height:400px;">
         <canvas id="line-chart" width="1200px" height="400px;"></canvas>
